@@ -1,0 +1,40 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+user1:
+  name: Joaquim Silva
+  email: joaquim.silva@ict.ufvjm.edu.br
+  phone: 3888445522
+  password: hash
+  tutor: false
+  admin: false
+
+user2:
+  name: Anderson Nogueira
+  email: anderson.nogueira@ict.ufvjm.edu.br
+  phone: 3888123456
+  password: hash444
+  tutor: false
+  admin: false
+
+tutor:
+  name: Marcelo Pedras
+  email: marcelo.pedras@ict.ufvjm.edu.br
+  phone: 3898765432
+  password: outrohash
+  tutor: true
+  admin: false
+
+admin:
+  name: Lucas Azevedo
+  email: lucas.azevedo@ict.ufvjm.edu.br
+  phone: 3899335678
+  password: maisoutrohash
+  tutor: false
+  admin: true
+
+admin_tutor:
+  name: Mariana Rios
+  email: mariana.rios@ict.ufvjm.edu.br
+  password: maishash
+  tutor: true
+  admin: true

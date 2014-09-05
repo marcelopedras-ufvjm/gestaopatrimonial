@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+manufacturer:
+  name: Fabricante do equipamento
+  description: Fabricante do recurso
+
+serial_number:
+  name: Número de série do equipamento
+  description: Número de série do recurso
+
+property_code_ufvjm:
+  name: Código do patrimônio adotado na UFVJM
+  description: Código único do equipamento adotado na UFVJM
+
+operating_system:
+  name: Sistema operacional
+  description: Sistema operacional utilizado pelo equipamento
+

@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+hp3000:
+  name: HP Pavilion 3000
+  description: Desktop com processdor AMD phenon, 4 gb de memória RAM, hd 5400 rpm de 512 gb
+  category: desktops
+  state: avaliable
+  localization: room_217
+
+hp3000_2:
+  name: HP Pavilion 3000
+  description: Desktop com processdor AMD phenon, 4 gb de memória RAM, hd 5400 rpm de 512 gb
+  category: desktops
+  state: loaned
+  localization: room_217
+
+large_printer_hp:
+  name: HP Desingnet T790
+  description: Impressora de banners e plantas com papel contínuo
+  category: large_printers
+  state: allocated
+  localization: room_217

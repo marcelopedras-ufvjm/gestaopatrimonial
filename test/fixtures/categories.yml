@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+computers:
+  name: Computadores
+  description: Computadores do tipo notebook, desktops, servers e tables estão incluídos nesta categoria
+  parent_category:
+
+notebooks:
+  name: Notebooks
+  description: Computadores portáteis
+  parent_category: computers
+
+desktops:
+  name: Desktops
+  description: Computadores de mesa
+  parent_category: computers
+
+tablets:
+  name: Tablets
+  description: Computadores portáteis com processamento limitado e tela touchscreen
+  parent_category: computers
+
+printers:
+  name: Impressoras
+  description: Impressoras jato de tinta, a laser, matriciais e de banners estão incluídas nesta categoria
+  parent_category:
+
+jet_printers:
+  name: Impressoras a jato de tinta
+  description: Impressoras jato de tinta
+  parent_category: printers
+
+laser_printers:
+  name: Impressoras a laser
+  description: Impressoras que usam tonner preto
+  parent_category: printers
+
+large_printers:
+  name: Impressoras de plantas e banners
+  description: Impressoras a jato de tinta com papel contínuo para impressão de banners e plantas
+  parent_category: printers
+
+softwares:
+  name: Softwares
+  description: Todos sofwares estão incluídos nesta categoria
+  parent_category: computers
+

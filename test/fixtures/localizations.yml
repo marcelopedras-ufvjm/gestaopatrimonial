@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+room_217:
+  name: Sala 217
+  description: Sala 217, Suporte de informática
+  complement: Segundo andar
+  building: ict_building
+
+classroom_1:
+  name: Sala de aula 1
+  description: Sala de aula, capacidade 60 alunos, possui datashow
+  complement: Primeiro andar
+  building: pavilion_classrooms

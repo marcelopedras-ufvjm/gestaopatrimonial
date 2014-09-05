@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+office:
+  name: Office 2010
+  description: Coleção de software para escritório
+  resource: hp3000
+  category: softwares
+
+visualcpp:
+  name: Visual C++ Free
+  description: IDE para programação nas linguagens C e C++
+  resource: hp3000
+  category: softwares

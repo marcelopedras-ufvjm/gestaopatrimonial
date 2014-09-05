@@ -1,0 +1,26 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+avaliable:
+  name: Disponível
+  description: Está disponível para empréstimo
+
+allocated:
+  name: Alocado
+  description: Está cedido permanentemente e não pode ser emprestado
+
+loaned:
+  name: Emprestado
+  description: No momento está emprestado, mas será devolvido
+
+maintenance:
+  name: Em manutenção
+  description: No momento o recurso está em manutenção
+
+unusable:
+  name: Inutilizado
+  description: O recurso não serve mais para uso
+
+discarded:
+  name: Descartado
+  description: O recurso foi descartado permanentemente.
+

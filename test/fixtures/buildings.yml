@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+ict_building:
+  name: Prédio das Engenharias
+  description: Prédio onde funcionam os cursos de engenharia. Possui 3 andares, 4 laboratórios de informatica e diversos gabinetes
+
+pavilion_classrooms:
+  name: Pavilhão de salas de aula
+  description: Prédio onde acontecem aulas de diversos cursos

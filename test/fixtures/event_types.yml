@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+loan:
+  name: Empréstimo
+  description: O recurso foi emprestado
+
+devolution:
+  name: Devolução
+  description: O recurso foi devolvido
+
+new_resource:
+  name: Novo recurso
+  description: Houve a inclusão de um novo recurso
+
+maintenance:
+  name: Manutenção
+  description: O recurso entrou em manutenção
+
+unusable:
+  name: Inutilizado
+  description: O recurso ficou obsoleto o foi não pode mais ser consertado
+
+
+moved_from_place:
+  name: Mudança de local
+  description: O recurso mudou de local
+
+
+
+
+

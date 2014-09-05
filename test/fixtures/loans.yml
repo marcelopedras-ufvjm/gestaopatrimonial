@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+loan:
+  start: 2014-09-02 14:54:38
+  end:
+  devolution_forecast: 2014-10-02 14:54:38
+  booking: false
+  observation: "Emprestimo com autorização do professor Alexandre Magnum"
+  user: user1
+  resource: hp3000_2
+
+booking:
+  start: 2014-10-02 15:00:00
+  end: 2014-10-20 14:00:00
+  devolution_forecast:
+  booking: true
+  observation:
+  user: user2
+  resource: hp3000_2

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+loan:
+  name: Empréstimo
+  description:
+  event_time: 2014-09-02 14:54:38
+  resource: hp3000_2
+  event_type: loan
+  localization: classroom_1
+  loan: loan
+

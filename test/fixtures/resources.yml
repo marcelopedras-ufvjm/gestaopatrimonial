@@ -6,6 +6,8 @@ hp3000:
   category: desktops
   state: avaliable
   localization: room_217
+  accessories: office, visualcpp
+  details: operating_system_hp3000, property_number_hp3000, manufacturer_hp, serial_number_hp3000
 
 hp3000_2:
   name: HP Pavilion 3000
@@ -13,6 +15,8 @@ hp3000_2:
   category: desktops
   state: loaned
   localization: room_217
+  accessories:
+  details: operating_system_hp3000, property_number_hp3000_2, manufacturer_hp, serial_number_hp3000_2
 
 large_printer_hp:
   name: HP Desingnet T790
@@ -20,3 +24,5 @@ large_printer_hp:
   category: large_printers
   state: allocated
   localization: room_217
+  accessories:
+  details: property_number_hpprinter, manufacturer_hp, serial_number_hpprinter

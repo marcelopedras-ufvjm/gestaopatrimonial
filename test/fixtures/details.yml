@@ -3,76 +3,40 @@
 operating_system_hp3000:
   name: Windows 7 Professional 64 bits
   description: Sistema Operacional 64 bits
-  order: 1
-  resource_id: hp3000
   detail_type_id: operating_system
 
 property_number_hp3000:
   name: 45rtf2456
   description: Código do patrimônio adotado na UFVJM
-  order: 2
-  resource_id: hp3000
   detail_type_id: property_code_ufvjm
 
-manufacturer_hp3000:
+manufacturer_hp:
   name: HP
   description: Hewlett-Packard
-  order: 3
-  resource_id: hp3000
   detail_type_id: manufacturer
 
 serial_number_hp3000:
   name: 1213ewtreutjbjt585685352rsgfdhgdh
   description: Serial do equipamento
-  order: 4
-  resource: hp3000
   detail_type: serial_number
-
-operating_system_hp3000_2:
-  name: Windows 7 Professional 64 bits
-  description: Sistema Operacional 64 bits
-  order: 1
-  resource: hp3000_2
-  detail_type: operating_system
 
 property_number_hp3000_2:
   name: 45rtf290o
   description: Código do patrimônio adotado na UFVJM
-  order: 2
-  resource: hp3000_2
   detail_type: property_code_ufvjm
-
-manufacturer_hp3000_2:
-  name: HP
-  description: Hewlett-Packard
-  order: 3
-  resource: hp3000_2
-  detail_type: manufacturer
 
 serial_number_hp3000_2:
   name: 1213ewtreutjbjt58568535qw75345kn9
   description: Serial do equipamento
-  order: 4
-  resource: hp3000_2
   detail_type: serial_number
 
 property_number_hpprinter:
   name: 45rtf2457
   description: Código do patrimônio adotado na UFVJM
-  order: 1
-  resource: large_printer_hp
   detail_type: property_code_ufvjm
 
-manufacturer_hpprinter:
-  name: HP
-  description: Hewlett-Packard
-  order: 2
-  resource: large_printer_hp
-  detail_type: manufacturer
 
 serial_number_hpprinter:
   name: 1213ewtreut2bjt586685342rsgfdh235
   description: Serial do equipamento
-  order: 3
-  resource: large_printer_hp
   detail_type: serial_number

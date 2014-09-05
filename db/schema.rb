@@ -11,19 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140902182336) do
+ActiveRecord::Schema.define(version: 20140905113316) do
 
   create_table "accessories", force: true do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "resource_id"
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "accessories", ["category_id"], name: "index_accessories_on_category_id"
-  add_index "accessories", ["resource_id"], name: "index_accessories_on_resource_id"
+
+  create_table "accessories_resources", id: false, force: true do |t|
+    t.integer "resource_id"
+    t.integer "accessory_id"
+  end
+
+  add_index "accessories_resources", ["accessory_id"], name: "index_accessories_resources_on_accessory_id"
+  add_index "accessories_resources", ["resource_id"], name: "index_accessories_resources_on_resource_id"
 
   create_table "buildings", force: true do |t|
     t.string   "name"
@@ -52,16 +58,20 @@ ActiveRecord::Schema.define(version: 20140902182336) do
   create_table "details", force: true do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "order"
-    t.integer  "resource_id"
     t.integer  "detail_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "details", ["detail_type_id"], name: "index_details_on_detail_type_id"
-  add_index "details", ["order", "resource_id"], name: "index_details_on_order_and_resource_id", unique: true
-  add_index "details", ["resource_id"], name: "index_details_on_resource_id"
+
+  create_table "details_resources", id: false, force: true do |t|
+    t.integer "resource_id"
+    t.integer "detail_id"
+  end
+
+  add_index "details_resources", ["detail_id"], name: "index_details_resources_on_detail_id"
+  add_index "details_resources", ["resource_id"], name: "index_details_resources_on_resource_id"
 
   create_table "event_types", force: true do |t|
     t.string   "name"
@@ -99,7 +109,7 @@ ActiveRecord::Schema.define(version: 20140902182336) do
   create_table "resource_histories", force: true do |t|
     t.string   "name"
     t.text     "description"
-    t.string   "event_time"
+    t.datetime "event_time"
     t.integer  "resource_id"
     t.integer  "event_type_id"
     t.integer  "localization_id"

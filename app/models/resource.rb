@@ -4,8 +4,10 @@ class Resource < ActiveRecord::Base
   belongs_to :localization
   belongs_to :user
 
-  has_many :accessories
-  has_many :details
+  has_and_belongs_to_many :accessories
+  has_and_belongs_to_many :details
+
+  has_many :loans
 
   validate :user_must_be_tutor_if_exists
 

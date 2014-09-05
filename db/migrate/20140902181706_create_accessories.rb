@@ -3,7 +3,6 @@ class CreateAccessories < ActiveRecord::Migration
     create_table :accessories do |t|
       t.string :name
       t.text :description
-      t.references :resource, index: true
       t.references :category, index: true
 
       t.timestamps

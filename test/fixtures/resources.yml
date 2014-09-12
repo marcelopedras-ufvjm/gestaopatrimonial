@@ -26,3 +26,4 @@ large_printer_hp:
   localization: room_217
   accessories:
   details: property_number_hpprinter, manufacturer_hp, serial_number_hpprinter
+  user: tutor

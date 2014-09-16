@@ -10,8 +10,11 @@ class Resource < ActiveRecord::Base
   has_many :loans
 
   validate :user_must_be_tutor_if_exists
+  validates :name, presence: true, allow_blank: false
+  validates_presence_of :category, :localization, :state
 
-  #validations
+
+  #custom validations
 
   def user_must_be_tutor_if_exists
     if has_responsible?

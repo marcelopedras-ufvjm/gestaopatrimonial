@@ -3,38 +3,39 @@
 user1:
   name: Joaquim Silva
   email: joaquim.silva@ict.ufvjm.edu.br
-  phone: 3888445522
-  password: hash
+  phone: (38) 8844-5522
+  password_digest: $2a$10$o3XvZXojawA332HQTXAW/.pm4sVwscUvT2RHxKo/q5sMmi6hjNEAa
   tutor: false
   admin: false
 
 user2:
   name: Anderson Nogueira
   email: anderson.nogueira@ict.ufvjm.edu.br
-  phone: 3888123456
-  password: hash444
+  phone: (38) 8812-3456
+  password_digest: $2a$10$o3XvZXojawA332HQTXAW/.pm4sVwscUvT2RHxKo/q5sMmi6hjNEAa
   tutor: false
   admin: false
 
 tutor:
   name: Marcelo Pedras
   email: marcelo.pedras@ict.ufvjm.edu.br
-  phone: 3898765432
-  password: outrohash
+  phone: (38) 9876-5432
+  password_digest: $2a$10$o3XvZXojawA332HQTXAW/.pm4sVwscUvT2RHxKo/q5sMmi6hjNEAa
   tutor: true
   admin: false
 
 admin:
   name: Lucas Azevedo
   email: lucas.azevedo@ict.ufvjm.edu.br
-  phone: 3899335678
-  password: maisoutrohash
+  phone: (38) 9933-5678
+  password_digest: $2a$10$o3XvZXojawA332HQTXAW/.pm4sVwscUvT2RHxKo/q5sMmi6hjNEAa
   tutor: false
   admin: true
 
 admin_tutor:
   name: Mariana Rios
   email: mariana.rios@ict.ufvjm.edu.br
-  password: maishash
+  phone: (38) 8813-7665
+  password_digest: $2a$10$o3XvZXojawA332HQTXAW/.pm4sVwscUvT2RHxKo/q5sMmi6hjNEAa
   tutor: true
   admin: true

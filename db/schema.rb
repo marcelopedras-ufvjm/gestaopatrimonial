@@ -150,9 +150,9 @@ ActiveRecord::Schema.define(version: 20140905113316) do
     t.string   "name"
     t.string   "email"
     t.string   "phone"
-    t.string   "password"
-    t.boolean  "tutor"
-    t.boolean  "admin"
+    t.string   "password_digest"
+    t.boolean  "tutor",           default: false
+    t.boolean  "admin",           default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

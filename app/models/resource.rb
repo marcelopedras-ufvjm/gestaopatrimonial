@@ -16,7 +16,7 @@ class Resource < ActiveRecord::Base
   def user_must_be_tutor_if_exists
     if has_responsible?
       unless user.tutor?
-        errors.add(:user, 'User most be tutor')
+        errors.add(:user, 'User must be tutor')
       end
     end
   end

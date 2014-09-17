@@ -1,0 +1,58 @@
+<div class="form-group" data-ng-class="{'has-error' : submitted && userForm.first_name.$invalid}">
+    <label class="control-label col-md-3">First name <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <input type="text" name="name" class="form-control" data-ng-model="user.name" required placeholder="name"/>
+    </div>
+    <p data-ng-show=" submitted && userForm.first_name.$invalid" class="help-block">Name is required.</p>
+</div>
+<div class="form-group" data-ng-class="{'has-error' : submitted && userForm.email.$invalid}">
+    <label class="control-label col-md-3">Email <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <input type="email" name="email" class="form-control" data-ng-model="user.email" required placeholder="test@example.com"/>
+    </div>
+    <p data-ng-show="submitted && userForm.email.$error.required" class="help-block">Email is required.</p>
+    <p data-ng-show="submitted && userForm.email.$error.email" class="help-block">Enter valid email</p>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-3">Phone </label>
+    <div class="col-md-4">
+        <input type="text" name="phone" class="form-control" data-ng-model="user.phone" placeholder="9876543210"/>
+    </div>
+    <p data-ng-show="submitted && userForm.phone.$invalid" class="help-block">Phone is required.</p>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-3">Password </label>
+    <div class="col-md-4">
+        <input type="text" name="password" class="form-control" data-ng-model="user.password" placeholder="*****"/>
+    </div>
+    <p data-ng-show="submitted && userForm.password.$invalid" class="help-block">Password is required.</p>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-3">Password Confirmation</label>
+    <div class="col-md-4">
+        <input type="text" name="password" class="form-control" data-ng-model="user.password_confirmation" placeholder="*****"/>
+    </div>
+    <p data-ng-show="submitted && userForm.password_confirmation.$invalid" class="help-block">Password confirmation is required.</p>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-3">Tutor</label>
+    <div class="col-md-4">
+        <input type="checkbox" name="tutor" class="form-control" data-ng-model="user.tutor"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-3">Admin</label>
+    <div class="col-md-4">
+        <input type="checkbox" name="admin" class="form-control" data-ng-model="user.admin"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="pull-left">
+        <a class="btn btn-default" href="/"> Back</a>
+        <button type="submit" class="btn btn-primary" data-ng-click="submitted=true">Submit</button>
+    </div>
+</div>
+

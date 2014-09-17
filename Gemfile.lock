@@ -27,7 +27,10 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    angular-ui-bootstrap-rails (0.11.0)
+    angularjs-rails (1.2.22)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x64-mingw32)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -116,6 +119,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  angular-ui-bootstrap-rails
+  angularjs-rails
   bcrypt (~> 3.1.7)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)

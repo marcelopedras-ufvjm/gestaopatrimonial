@@ -23,17 +23,20 @@ angular.module('GestaoPatrimonial').config([
             controller: "UserUpdateCtr"
         });
 
+        $routeProvider.when('/user_sessions/new', {
+            templateUrl: '/templates/user_sessions/login.html',
+            controller: "UserSessionsController"
+        });
+
+        $routeProvider.when('/', {
+            templateUrl: '/templates/user_sessions/login.html',
+            controller: "UserSessionsController"
+        });
+
         $routeProvider.otherwise({
             redirectTo: '/users'
         });
 
-//        $routeProvider.when('/user_sessions/new', {
-//            templateUrl: '/templates/user_sessions/login.html',
-//            controller: "UserSessionsController"
-//        });
-//
-//        $routeProvider.otherwise({
-//            redirectTo: '/user_sessions/new'
-//        });
+
     }
 ]);

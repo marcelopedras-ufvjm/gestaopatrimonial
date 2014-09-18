@@ -5,12 +5,12 @@
 //Controller
 angular.module('GestaoPatrimonial').controller("UserSessionsController", ['$scope', '$http', '$resource', 'UserSession', '$location', function($scope, $http, $resource, UserSession, $location) {
 
-    $scope.user_session = UserSession.new();
+    //$scope.user_session = UserSession.new();
 
     $scope.createUserSession = function () {
         if ($scope.userSessionForm.$valid){
             UserSession.create({userSession: $scope.userSession}, function(){
-                $location.path('/');
+                $location.path('/users');
             }, function(error){
                 console.log(error)
             });

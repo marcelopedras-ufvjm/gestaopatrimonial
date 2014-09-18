@@ -1,11 +1,12 @@
 class UserSessionsController < ApplicationController
 
-  respond_to :json
+  respond_to :json, :html
 
   def new
     @session = UserSession.new(session)
     respond_with(@session) do |format|
       format.json {render :json => @session.as_json }
+      format.html
     end
   end
 
